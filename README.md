@@ -15,15 +15,22 @@ Deploy a **MERN Stack** Application that allows users to post their thoughts usi
 The [AWS Command Line Interface](https://aws.amazon.com/cli/), or AWS CLI, will help you bring together your various AWS services, by controlling them from the command line. You can also automate these services by using scripts.
 
 ## NPM Packages
-[aws-sdk](https://www.npmjs.com/package/aws-sdk) is the official AWS software development kit (SDK) for JavaScript. Available for browsers, mobile devices, or Node.js back ends, this package will allow your Node.js application to interface with AWS.
+✅ [aws-sdk](https://www.npmjs.com/package/aws-sdk) is the official AWS software development kit (SDK) for JavaScript. Available for browsers, mobile devices, or Node.js back ends, this package will allow your Node.js application to interface with AWS.
 
 [multer](https://www.npmjs.com/package/multer) is a Node.js middleware for handling file uploads. In this project, you’ll use it as a container for image files until they’re ready to be uploaded to an S3 bucket.
 
-[uuid](https://www.npmjs.com/package/uuid) stands for universally unique identifier. This package generates random alphanumeric strings that can serve as unique identifiers. You’ll use this package to generate identifiers for your S3 bucket and for your application’s images.
+✅[uuid](https://www.npmjs.com/package/uuid) stands for universally unique identifier. This package generates random alphanumeric strings that can serve as unique identifiers. You’ll use this package to generate identifiers for your S3 bucket and for your application’s images.
 
 [pm2](https://www.npmjs.com/package/pm2) is a Node.js production process manager that helps you manage your web application—and keep it live online. You’ll use this package to keep your application running even after you’ve logged out of the server on EC2.
 
 ## Web Server
 [nginx](https://www.nginx.com/), sometimes stylized as NGINX or NginX, is a free and open-source web server that can also serve as a reverse proxy, load balancer, mail proxy, or HTTP cache. You’ll use it as an application server to expose the EC2 instance to the internet.
+
+## Explore
+The Compute category offers services that allow computer systems to be provisioned to run applications, calculate complex calculations, and respond to requests.
+
+The Storage category offers services that store data in the cloud.
+
+The Database category includes relational and non-relational databases that can be used to store and query large amounts of data.
 
 ## Screenshots
