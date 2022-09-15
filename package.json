@@ -1,7 +1,7 @@
 {
   "name": "aws-thought",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description Deploy a **MERN Stack** Application that allows users to post their thoughts using the cloud, and replace the back-end API with cloud resources to handle the storage, database, and computing. Configure IAM user permissions to connect various [AWS services](https://aws.amazon.com/). Store and retrieve static assets using Amazon Simple Storage Service (S3). Connect an existing application to a DynamoDB database. Configure a Linux server to deploy the application to an Elastic Compute Cloud (EC2) instance. Learn differences between Saas (Software as a Service), Paas (Platform as a Service), Iaas (infastructure as a Service).",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -15,10 +15,19 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1216.0",
+    "express": "^4.18.1",
     "if-env": "^1.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CynthiaGodoy/AWS-Deep-Thoughts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CynthiaGodoy/AWS-Deep-Thoughts/issues"
+  },
+  "homepage": "https://github.com/CynthiaGodoy/AWS-Deep-Thoughts#readme"
 }
