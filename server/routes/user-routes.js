@@ -22,7 +22,7 @@ router.get('/users', (req, res) => {
             res.json(data.Items);
         }
     });
-})
+});
 
 // get thoughts from a user
 router.get('/users/:username', (req, res) => {
@@ -65,7 +65,7 @@ router.post('/users', (req, res) => {
             thought: req.body.thought,
         },
     };
-    
+
     dynamodb.put(params, (err, data) => {
         if (err) {
         console.error(
