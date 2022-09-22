@@ -11,6 +11,7 @@ const Profile = props => {
     thought: '',
   }]);
 
+  //Use the userParam sourced from the React Router to retain the username from the ThoughtList component. Pass the userParam to the database in the URL. Set the state with the database response.Set the dependency array in the hook to reflect the dependency for the username with userParam.
   useEffect(() => {
     const fetchData = async () => {
       try {

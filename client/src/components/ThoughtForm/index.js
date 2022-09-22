@@ -19,6 +19,7 @@ const ThoughtForm = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
+    //send the request to the API endpoint to create a new thought. In the handleFormSubmit function, under the event.preventDefault. In the preceding function, we used the fetch function to send the form data to the endpoint in the body of the request.
     const postData = async () => {
       const res = await fetch('/api/users', {
         method: 'POST',

@@ -50,7 +50,7 @@ The Database category includes relational and non-relational databases that can 
 ```
 npm install
 ```
-8. Download AWS CLI. Verify version installed from `cmd`.
+8. Download AWS CLI. Verify version installed from `cmd`. Should be in the Program Files under AWSCLIV2. Right click on folder location and type cmd so prompt opens in the right location.
 ```
 aws --version
 ```
@@ -82,7 +82,8 @@ node create-bucket.js
 * Created API endpoints
 * Programmatically connected to AWS.
 
-1. Download AWS DynamoDB. Navigate to folder and run `cmd`. Should run on Port 8000. 
+1. Download AWS DynamoDB. Navigate to folder and run `cmd`. Should run on Port 8000. Should be in the Program Files under dynamodb_local-latest. Right click on folder location and type cmd so prompt opens in the right location.
+
 ```
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
@@ -123,5 +124,32 @@ localhost:3001/api/users/Ray%20Davis
 ```
 localhost:3001/api/users
 ```  
+ ### feature/integrate-api
+* Integrated database calls into the UI.
+* Created an image upload route for uploading an image to the S3 bucket.
+* Added an input element to capture the image file from the user.
+* Integrated the image upload route into the UI component.
+
+1. Ensure that the packages are installed in `Root Directory`.
+```
+npm install
+```
+2. Start the React Application in `Root Directory`. This will run the watch script & nodemon process with restart the server successfully. Open https://localhost:3001 in the browser.
+```
+npm run start:dev
+```
+3. Test the work by starting the Express Server from `Client Directory`. Open https://localhost:3000 in the browser.
+```
+npm run start
+```
+4. Deploy Amazon DynamoDB to AWS. From the `Root Directory`. 
+```
+node ./server/db/CreateThoughtsTable.js && node ./server/db/LoadThoughts.js
+```
+5. Table scan in the AWS CLI to check whether the data is the from the old table or new table using the following command:
+```
+aws dynamodb scan --table-name Thoughts
+```
+
 
 ## Screenshots
