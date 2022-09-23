@@ -20,3 +20,10 @@ app.use('/api/', userRoutes);
 app.listen(PORT, () =>
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`),
 );
+
+// app.use(require('./routes'));
+app.use('/api/', userRoutes);
+app.use('/api/', imageRoutes); // add this route for image upload
+
+const userRoutes = require('./routes/user-routes');
+const imageRoutes = require('./routes/image-upload'); // add this file import to the top of the file
