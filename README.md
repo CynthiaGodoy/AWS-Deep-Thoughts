@@ -138,7 +138,7 @@ npm install
 ```
 npm run start:dev
 ```
-3. Test the work by starting the Express Server from `Client Directory`. Open https://localhost:3000 in the browser.
+3. Test the work by starting the Express Server from `Client Directory`. Open https://localhost:3000 in the browser.art
 ```
 npm run start
 ```
@@ -150,6 +150,13 @@ node ./server/db/CreateThoughtsTable.js && node ./server/db/LoadThoughts.js
 ```
 aws dynamodb scan --table-name Thoughts
 ```
-
+6. Install `multer` in `Server Directory`. With multer we'll create a temporary storage container that will hold the image files until it is ready to be uploaded to the S3 bucket. multer removes this temporary storage space once this buffer has been used.
+```
+npm install multer 
+```
+7. Install `uuid` in `Server Directory`.
+```
+npm install uuid
+```
 
 ## Screenshots
